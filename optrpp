@@ -1,0 +1,8 @@
+#include <boost/safe_numerics/safe_integer.hpp>
+
+constexpr boost::safe_numerics::safe<unsigned int> f()
+{ 
+    boost::safe_numerics::safe<unsigned int> x = 3;
+    x++; 
+    return x;
+}
